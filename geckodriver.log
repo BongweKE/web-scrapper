@@ -1,0 +1,15 @@
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Opening in existing browser session.
+libva error: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+[32649:32649:0100/000000.174260:ERROR:sandbox_linux.cc(378)] InitializeSandbox() called with multiple threads in process gpu-process.
+Opening in existing browser session.
+[32880:32880:0121/113108.407234:ERROR:broker_posix.cc(43)] Invalid node channel message
+libva error: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+[32878:32878:0100/000000.517464:ERROR:sandbox_linux.cc(378)] InitializeSandbox() called with multiple threads in process gpu-process.
+[32878:32878:0100/000000.518270:ERROR:broker_posix.cc(43)] Invalid node channel message
+libva error: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+[33009:33009:0121/113248.674892:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is desktop
+[33009:33009:0121/113249.022290:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
