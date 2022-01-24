@@ -32,7 +32,7 @@ def SearchView(request):
 
             soup = BeautifulSoup(page.content, "html.parser")
             results = soup.find_all()
-            elements = {'title':[],'h1':[], 'h2':[], 'p':[], 'buttons':[]}
+            elements = {'title':[],'h1':[], 'h2':[], 'p':[], 'button':[]}
             words = []
             # stop words are words that shouldn't be counted
             stop_words = set(stopwords.words('english'))
