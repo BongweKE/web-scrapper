@@ -1,0 +1,48 @@
+{% extends "main_template.html" %}
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+
+<div class="card text-center">
+    <div class="card-header">Search Results</div>
+    <div class="card-body">
+        <h5 class="card-title">We Have Successfully scraped</h5>
+        <p class="card-text">
+            {{url}}
+        </p>
+        {% comment %} <form method="GET">
+             {% csrf_token %} 
+             {{ form.as_p }} 
+            <div class="text-center">
+                <button class="btn btn-deep-orange">Save to DB</button>
+            </div>
+        </form> {% endcomment %}
+    </div>
+    <div class="card-footer text-muted">Search results below:</div>
+</div>
+
+    <div class="mx-auto" style="width: 200px">
+        <div class="d-grid gap-4">
+            <div class="p-2 bg-light border">
+                <table class="table table-inverse">
+                    
+                    <thead>
+                    <tr>
+                        <th>WORD</th>
+                        <th>Appearances</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for t in df %} 
+                    <tr>
+                        <th scope="row">{{ t.0 }}</th>
+                        <td>{{ t.1 }}</td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

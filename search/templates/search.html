@@ -1,0 +1,29 @@
+{% extends "main_template.html" %}
+{% block title %}Search to scrape{% endblock %}
+{% block content %}
+<!--Search form which will input data to python scraping function-->
+<div class="card">
+    <div class="card-block">
+        <form method="POST">{% csrf_token %}
+            <!--Form Header-->
+            <div class="text-center">
+                <h3><i class="fa fa-pencil"></i>Input Website URL:</h3>
+                <hr class="mt-2 mb-2">
+            </div>
+
+            <!--Body-->
+            <p>You input a website, we scrape for data and tell you stuff about it</p>
+            <br>
+            
+            {{ form.as_p }}
+            
+            
+
+            <div class="text-center">
+                <button class="btn btn-deep-orange">Scrape For Data</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--/Search form which will input data to python scraping function-->
+{% endblock %}
