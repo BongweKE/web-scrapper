@@ -24,30 +24,30 @@ when you input the url of the website;
 5. sentences are converted to words using word_tokenize function
 6. we add all the words to a list which is sorted before pandas converts it to a dataframe
 7. pandas value_counts() is used to count ocurrences of unique words before sorting in order of the most common to the least common word
-8. the results are rendered in tabular format
+8. the results are rendered in tabular format\
 
-*future improvements*
+*future improvements*\
 We will be able to save to the database and compare different search results using python DS tools
 
 # how to setup the environment
-*this is more suitable for a linux user*
-1. Set up a virtual environment
+*this is more suitable for a linux user*\
+1. Set up a virtual environment\
 $ python3 -m venv envName
 
-Once the process is complete, you also need to activate the virtual environment:
-(this is the first command for when you've already setup the venv)
+Once the process is complete, you also need to activate the virtual environment:\
+(this is the first command for when you've already setup the venv)\
 
 $ source envName/bin/activate
 
-2. Install Django if you dont have it (or update)
+2. Install Django if you dont have it (or update)\
 (envName) $ python -m pip install django
 
-3. pull the repo from github and note the location of the requirements.txt file
+3. pull the repo from github and note the location of the requirements.txt file\
 (envName) $ python -m pip install -r webScrapper/requirements.txt
 
-4. now that you have all the requirements you can run the program from within the directory
-(envName) $ cd ./webScrapper
-(envName) $ python manage.py migrate
+4. now that you have all the requirements you can run the program from within the directory\
+(envName) $ cd ./webScrapper\
+(envName) $ python manage.py migrate\
 (envName) $ python manage.py runserver
 
 5. You'll get a link which you can copy and run in the browser. \
